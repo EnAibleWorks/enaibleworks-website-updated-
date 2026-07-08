@@ -1,0 +1,11 @@
+# EnAibleWorks
+
+> EnAibleWorks helps small and mid-sized businesses compete with larger companies through modern websites, professional branding, practical AI, automation, and an exceptional digital presence.
+
+## Pages
+
+- [Home](/): Discover how EnAibleWorks enables small and mid-sized businesses with modern technology, branding, AI, and automation.
+- [Services](/services): Explore the full range of services including web design, branding, AI integration, automation, and digital strategy.
+- [Process](/process): Learn how EnAibleWorks partners with clients from discovery to launch and ongoing support.
+- [About](/about): Meet the mission and values behind EnAibleWorks and why we exist to level the playing field for smaller businesses.
+- [Contact](/contact): Get in touch to start a project or learn more about becoming enabled.
