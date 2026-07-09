@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import conceptGroundEffex from "@/assets/concept-ground-effex.jpg";
 import conceptMorrisSussex from "@/assets/concept-morris-sussex.jpg";
+import conceptJerseyMetal from "@/assets/concept-jersey-metal.jpg";
 
 export const Route = createFileRoute("/redesign-concepts")({
   head: () => ({
@@ -32,7 +33,8 @@ type Concept = {
   description: string;
   image: string;
   imageAlt: string;
-  liveUrl: string;
+  liveUrl?: string;
+  githubUrl?: string;
 };
 
 const concepts: Concept[] = [
@@ -53,6 +55,15 @@ const concepts: Concept[] = [
     image: conceptMorrisSussex,
     imageAlt: "Morris Sussex Heating & Air Conditioning website redesign concept preview",
     liveUrl: "https://heating-elevated.emergent.host/",
+  },
+  {
+    name: "Jersey Metal Reimagined",
+    industry: "Publishing & Music History",
+    description:
+      "A redesign concept for the Jersey Metal book brand, chronicling New Jersey's heavy metal scene — built around bold editorial typography, an integrated merch shop, band photo galleries, and press coverage in a clean, immersive dark layout.",
+    image: conceptJerseyMetal,
+    imageAlt: "Jersey Metal Reimagined website redesign concept preview",
+    githubUrl: "https://github.com/EnAibleWorks/jersey-metal-reimaged-.git",
   },
 ];
 
@@ -110,15 +121,30 @@ function RedesignConcepts() {
                     {c.description}
                   </p>
                 </div>
-                <a
-                  href={c.liveUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group/btn inline-flex flex-shrink-0 items-center gap-2 self-start rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-background transition-all hover:shadow-glow md:self-end"
-                >
-                  View Live Concept
-                  <ExternalLink className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5" />
-                </a>
+                <div className="flex flex-shrink-0 flex-wrap gap-3 self-start md:self-end">
+                  {c.liveUrl && (
+                    <a
+                      href={c.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="group/btn inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-background transition-all hover:shadow-glow"
+                    >
+                      View Live Concept
+                      <ExternalLink className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5" />
+                    </a>
+                  )}
+                  {c.githubUrl && (
+                    <a
+                      href={c.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="group/btn inline-flex items-center gap-2 rounded-full border border-border bg-transparent px-6 py-3 text-sm font-semibold text-foreground transition-all hover:border-foreground"
+                    >
+                      GitHub Repo
+                      <Github className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5" />
+                    </a>
+                  )}
+                </div>
               </div>
             </article>
           ))}
