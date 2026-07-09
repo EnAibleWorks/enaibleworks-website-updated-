@@ -31,6 +31,7 @@ type Concept = {
   industry: string;
   description: string;
   image: string;
+  imageAlt: string;
   liveUrl: string;
 };
 
@@ -41,6 +42,7 @@ const concepts: Concept[] = [
     description:
       "A complete 2026 website redesign concept focused on modern outdoor living, improved lead generation, premium project photography, and a luxury customer experience.",
     image: conceptGroundEffex,
+    imageAlt: "Ground Effex Landscaping website redesign concept preview",
     liveUrl: "#",
   },
   {
@@ -49,7 +51,8 @@ const concepts: Concept[] = [
     description:
       "A modern redesign concept featuring improved branding, stronger calls-to-action, better mobile usability, enhanced trust signals, and a streamlined customer experience.",
     image: conceptMorrisSussex,
-    liveUrl: "#",
+    imageAlt: "Morris Sussex Heating & Air Conditioning website redesign concept preview",
+    liveUrl: "https://heating-elevated.emergent.host/",
   },
 ];
 
@@ -88,7 +91,7 @@ function RedesignConcepts() {
               <div className="relative overflow-hidden">
                 <img
                   src={c.image}
-                  alt={`${c.name} website redesign concept`}
+                  alt={c.imageAlt}
                   width={1280}
                   height={800}
                   loading="lazy"
