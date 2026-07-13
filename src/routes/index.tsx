@@ -84,7 +84,7 @@ function Index() {
           {[
             { icon: Users, title: "Built For Local Business", desc: "Solutions for the businesses in your neighborhood" },
             { icon: ShieldCheck, stat: "25+", title: "Years Of Experience", desc: "Real operations experience — not just technology" },
-            { icon: Target, title: "Clear Parctical Guidance", desc: "We explain everything so nothing feels overwhelming" },
+            { icon: Target, title: "Clear Practical Guidance", desc: "We explain everything so nothing feels overwhelming" },
             { icon: LineChart, title: "Focused On Results", desc: "More time. More customers. Less stress." },
           ].map((s) => (
             <div key={s.title} className="flex items-center gap-4">
