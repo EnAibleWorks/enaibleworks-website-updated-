@@ -45,7 +45,7 @@ const concepts: Concept[] = [
       "A complete 2026 website redesign concept focused on modern outdoor living, improved lead generation, premium project photography, and a luxury customer experience.",
     image: conceptGroundEffex,
     imageAlt: "Ground Effex Landscaping website redesign concept preview",
-    liveUrl: "#",
+    liveUrl: "https://groundfx.enaibleworks.com/",
   },
   {
     name: "Morris Sussex Heating & Air Conditioning",
@@ -63,6 +63,7 @@ const concepts: Concept[] = [
       "A redesign concept for the Jersey Metal book brand, chronicling New Jersey's heavy metal scene — built around bold editorial typography, an integrated merch shop, band photo galleries, and press coverage in a clean, immersive dark layout.",
     image: conceptJerseyMetal,
     imageAlt: "Jersey Metal Reimagined website redesign concept preview",
+    liveUrl: "https://jerseymetal.enaibleworks.com/",
     githubUrl: "https://github.com/EnAibleWorks/jersey-metal-reimaged-.git",
   },
 ];
