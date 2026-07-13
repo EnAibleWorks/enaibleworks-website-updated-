@@ -64,7 +64,6 @@ const concepts: Concept[] = [
     image: conceptJerseyMetal,
     imageAlt: "Jersey Metal Reimagined website redesign concept preview",
     liveUrl: "https://jerseymetal.enaibleworks.com/",
-    githubUrl: "https://github.com/EnAibleWorks/jersey-metal-reimaged-.git",
   },
 ];
 
